@@ -1,4 +1,4 @@
-SELECT AVG(total_amount_paid) AS avg_amount_paid
+-- The following query is used to SELECT AVG(total_amount_paid) AS avg_amount_paid as top customer
 
 FROM (
  SELECT A.customer_id, A.first_name, A.last_name, C.city, D.country, SUM(E.amount) AS 
